@@ -55,6 +55,7 @@ class Car(ComplexModel):
 
 class Station(ComplexModel):
     coordonates = Array(Array(float).customize(max_occurs=2, min_occurs=2))
+    speed = Unicode
 
 
 class service(ServiceBase):
